@@ -1,59 +1,36 @@
-# Active Directory Homelab in Microsoft Azure
+# 🏢 Active Directory Homelab in Microsoft Azure
 
-## Overview
-
-This project demonstrates the deployment and configuration of an enterprise-style Active Directory environment in Microsoft Azure. The lab was built to gain hands-on experience with Windows Server administration, Identity & Access Management (IAM), DNS, Organizational Units (OUs), Security Groups, Role-Based Access Control (RBAC), and Group Policy Objects (GPOs).
-
-The environment simulates a small corporate network consisting of a Domain Controller and a domain-joined workstation to practice common identity administration tasks.
+> **Enterprise Active Directory lab built in Microsoft Azure to develop hands-on experience with Windows Server administration, Identity & Access Management (IAM), DNS, Organizational Units (OUs), Security Groups, Role-Based Access Control (RBAC), and Group Policy.**
 
 ---
 
-# Lab Architecture
+## 📌 Project Overview
 
+This project simulates a small enterprise Active Directory environment hosted in Microsoft Azure. The objective was to build and administer a Windows domain from the ground up while gaining practical experience with identity management, authentication, authorization, and Group Policy administration.
+
+Instead of following a simple walkthrough, I also troubleshot real-world configuration issues—such as resolving a Group Policy application problem caused by Organizational Unit placement—which reinforced my understanding of how Active Directory processes user and computer policies.
+
+---
+
+## 🏗️ Lab Architecture
+
+```text
+                    Microsoft Azure
+                           │
+                Resource Group: HOMELAB
+                           │
+          ┌────────────────┴────────────────┐
+          │                                 │
+      DC01 (Domain Controller)          CLIENT01
+    Windows Server 2022             Windows Server 2022
+      AD DS + DNS                   Domain Joined
+          │_______________________________│
+                   homelab.local
 ```
-Microsoft Azure
-│
-├── Resource Group: HOMELAB
-│
-├── DC01
-│   ├── Windows Server 2022
-│   ├── Active Directory Domain Services (AD DS)
-│   ├── DNS Server
-│   └── homelab.local
-│
-└── CLIENT01
-    ├── Windows Server 2022
-    └── Joined to homelab.local
-```
 
 ---
 
-# Technologies Used
-
-- Microsoft Azure
-- Windows Server 2022
-- Active Directory Domain Services (AD DS)
-- DNS Server
-- Group Policy Management
-- Remote Desktop (RDP)
-- Windows Command Prompt
-
----
-
-# Project Objectives
-
-- Deploy an Active Directory environment in Microsoft Azure
-- Configure Active Directory Domain Services (AD DS)
-- Configure DNS
-- Join a workstation to the domain
-- Create Organizational Units (OUs)
-- Create users and security groups
-- Implement Role-Based Access Control (RBAC)
-- Configure and troubleshoot Group Policy Objects (GPOs)
-
----
-
-# Azure Infrastructure
+## 🖥️ Azure Infrastructure
 
 ### Resource Group
 
@@ -63,7 +40,7 @@ Microsoft Azure
 
 ![Virtual Machines](screenshots/virtualmachines.png)
 
-The Azure environment consists of one Domain Controller (DC01) and one domain-joined workstation (CLIENT01).
+The Azure environment consists of one Windows Server Domain Controller (**DC01**) and one domain-joined workstation (**CLIENT01**) connected within the same virtual network.
 
 ---
 
