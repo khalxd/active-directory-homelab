@@ -238,13 +238,3 @@ The most valuable learning experience was troubleshooting a Group Policy issue c
 
 ---
 
-# 🚀 Future Improvements
-
-- Configure Fine-Grained Password Policies
-- Implement Account Lockout Policies
-- Deploy SMB File Shares with NTFS Permissions
-- Configure Folder Redirection
-- Configure Roaming User Profiles
-- Integrate Microsoft Entra ID
-- Build a Hybrid Identity Environment with Microsoft Entra Connect
-- Automate Active Directory administration using PowerShell
