@@ -24,7 +24,7 @@ The environment simulates a small corporate network consisting of a Domain Contr
           ┌──────────────────────────┴─────────────────────────┐
           │                                                    │
 ┌─────────────────────────┐                      ┌─────────────────────────┐
-│          DC01           │                      │        CLIENT01         │
+│    WindowsServer22      │                      │        CLIENT01         │
 │ Windows Server 2022     │                      │ Windows Server 2022     │
 │ Active Directory        │                      │ Domain Joined           │
 │ DNS Server              │                      │ Authenticated via AD    │
@@ -42,7 +42,7 @@ The environment simulates a small corporate network consisting of a Domain Contr
 | Cloud Platform | Microsoft Azure |
 | Resource Group | HOMELAB |
 | Domain | homelab.local |
-| Domain Controller | DC01 |
+| Domain Controller | WindowsServer2022 |
 | Client Machine | CLIENT01 |
 | Operating System | Windows Server 2022 |
 | Identity Service | Active Directory Domain Services (AD DS) |
