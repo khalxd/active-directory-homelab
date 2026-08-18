@@ -236,5 +236,3 @@ This project strengthened my understanding of how enterprise Active Directory en
 
 The most valuable learning experience was troubleshooting a Group Policy issue caused by incorrect Organizational Unit placement. Working through the problem reinforced the relationship between Active Directory structure and Group Policy processing while improving my troubleshooting methodology.
 
----
-
